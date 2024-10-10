@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Родовий капітал</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -11,10 +11,1120 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <div class="header-start-container">
+          <p class="start-info">ІНТЕНСИВ</p>
+          <p class="start-info">
+            Старт <span id="dateElement"></span> <span id="monthElement"></span>
+          </p>
+        </div>
+        <h1 class="header-title">РОДОВИЙ капітал</h1>
+        <p class="header-desc">
+          Як розкрити свій фінансовий потенціал роду і за 6 тижнів навчитися
+          притягувати багатство
+        </p>
+        <ul class="header-list">
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/item-01-1x.png 1x,
+                  ./src/img/header/item-01-2x.png 2x
+                "
+                width="22"
+                height="22" />
+              <img
+                class="item-image"
+                src="./src/img/header/item-01-1x.png"
+                alt="emoji"
+                width="22"
+                height="22"
+            /></picture>
+            Без психологів, езотерики та магії
+          </li>
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/item-02-1x.png 1x,
+                  ./src/img/header/item-02-2x.png 2x
+                "
+                width="22"
+                height="22" />
+              <img
+                class="item-image"
+                src="./src/img/header/item-02-1x.png"
+                alt="emoji"
+                width="22"
+                height="22"
+            /></picture>
+            Покращення вже після перших днів роботи
+          </li>
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/item-03-1x.png 1x,
+                  ./src/img/header/item-03-2x.png 2x
+                "
+                width="22"
+                height="22" />
+              <img
+                class="item-image"
+                src="./src/img/header/item-03-1x.png"
+                alt="emoji"
+                width="22"
+                height="22"
+            /></picture>
+            Навіть якщо ти не знаєш нічого про свій Рід
+          </li>
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/item-04-1x.png 1x,
+                  ./src/img/header/item-04-2x.png 2x
+                "
+                width="22"
+                height="22" />
+              <img
+                class="item-image"
+                src="./src/img/header/item-04-1x.png"
+                alt="emoji"
+                width="22"
+                height="22"
+            /></picture>
+            Практичні завдання та робота з підсвідомістю
+          </li>
+        </ul>
+        <div class="header-button-container">
+          <a class="header-button link" data-scroll href="#register"
+            >Хочу на курс</a
+          >
+          <div class="header-sale-mark">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/sale-mark-1x.png 1x,
+                  ./src/img/header/sale-mark-2x.png 2x
+                "
+                width="60"
+                height="60" />
+              <img
+                class="sale-mark"
+                src="./src/img/header/sale-mark-1x.png"
+                alt="sale"
+                width="60"
+                height="60"
+            /></picture>
+            <p class="sale-number">-85%</p>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="bonuses">
+        <div class="container">
+          <div class="bonuses-title-container">
+            <h2 class="bonuses-title">
+              Встигни приєднатись за кращою ціною <br />
+              <span>і отримати бонуси</span>
+            </h2>
+            <!-- <p class="bonus-subtitle">і отримати бонуси</p> -->
+          </div>
+          <picture
+            ><source
+              srcset="
+                ./src/img/bonuses/bonus-01-1x.png 1x,
+                ./src/img/bonuses/bonus-01-2x.png 2x
+              "
+              width="300"
+              height="300" />
+            <img
+              class="bonus-image"
+              src="./src/img/bonuses/bonus-01-1x.png"
+              alt="bonus"
+              width="300"
+              height="300"
+          /></picture>
+          <div class="bonuses-wrapper">
+            <ul class="bonuses-list">
+              <li class="list-item">
+                <span>- Медитація</span> у записі "Ти - мільйонер"
+              </li>
+              <li class="list-item">
+                <span>- Подкаст</span> про гроші та реалізацію
+              </li>
+              <li class="list-item">
+                <span>- Твій персональний</span> фінансовий код
+              </li>
+            </ul>
+            <p class="item-plus">+ Можливість особистої діагностики</p>
+          </div>
+          <div id="countdown-one" class="countdown">
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="milliseconds countdown-time"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="for-whom section">
+        <div class="container">
+          <div class="for-whom-title-container">
+            <h2 class="for-whom-title">Для кого</h2>
+            <p class="for-whom-subtitle">цей інтенсив:</p>
+          </div>
+          <ul class="for-whom-list">
+            <li class="list-item">
+              <div class="item-picture-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/for-whom-01-1x.png 1x,
+                      ./src/img/for-whom/for-whom-01-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/for-whom-01-1x.png"
+                    alt="image"
+                    width="110"
+                    height="100"
+                /></picture>
+              </div>
+              <div class="text-box">
+                <p class="title">Якщо ти відчуваєш,</p>
+                <p class="text">що твоя робота не приносить тобі задоволення</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="item-picture-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/for-whom-02-1x.png 1x,
+                      ./src/img/for-whom/for-whom-02-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/for-whom-02-1x.png"
+                    alt="image"
+                    width="110"
+                    height="100"
+                /></picture>
+              </div>
+              <div class="text-box">
+                <p class="title">Гроші дістаються важко</p>
+                <p class="text">і зникають швидко</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="item-picture-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/for-whom-03-1x.png 1x,
+                      ./src/img/for-whom/for-whom-03-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/for-whom-03-1x.png"
+                    alt="image"
+                    width="110"
+                    height="100"
+                /></picture>
+              </div>
+              <div class="text-box">
+                <p class="title">Витрати</p>
+                <p class="text">переважають доходи</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="item-picture-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/for-whom-04-1x.png 1x,
+                      ./src/img/for-whom/for-whom-04-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/for-whom-04-1x.png"
+                    alt="image"
+                    width="110"
+                    height="100"
+                /></picture>
+              </div>
+              <div class="text-box">
+                <p class="title">Коли ти працюєш багато,</p>
+                <p class="text">
+                  втомлюєшся, але гроші все одно не йдуть до тебе
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="item-picture-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/for-whom-05-1x.png 1x,
+                      ./src/img/for-whom/for-whom-05-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/for-whom-05-1x.png"
+                    alt="image"
+                    width="110"
+                    height="100"
+                /></picture>
+              </div>
+              <div class="text-box">
+                <p class="title">Постійна втома,</p>
+                <p class="text">
+                  та відчуття що у тебе немає ресурсу та енергії
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="item-picture-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/for-whom-06-1x.png 1x,
+                      ./src/img/for-whom/for-whom-06-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/for-whom-06-1x.png"
+                    alt="image"
+                    width="110"
+                    height="100"
+                /></picture>
+              </div>
+              <div class="text-box">
+                <p class="title">Ти повторюєш родові</p>
+                <p class="text">сценарії своїх предків</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="item-picture-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/for-whom-07-1x.png 1x,
+                      ./src/img/for-whom/for-whom-07-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/for-whom-07-1x.png"
+                    alt="image"
+                    width="110"
+                    height="100"
+                /></picture>
+              </div>
+              <div class="text-box">
+                <p class="title">У твоєму роді є генетичні</p>
+                <p class="text">
+                  хвороби, або неприйняті особи (абортовані діти, злочинці,
+                  вбивці)
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="item-picture-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/for-whom-08-1x.png 1x,
+                      ./src/img/for-whom/for-whom-08-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/for-whom-08-1x.png"
+                    alt="image"
+                    width="110"
+                    height="100"
+                /></picture>
+              </div>
+              <div class="text-box">
+                <p class="title">Відносини з близькими</p>
+                <p class="text">бажають бути кращими</p>
+              </div>
+            </li>
+          </ul>
+          <div>
+            <p class="ready-title">
+              Ти готовий нарешті вийти на новий фінансовий рівень,
+            </p>
+            <p class="ready-text">
+              де гроші приходять легко та з різних джерел. Тоді не зволікай , це
+              твій шанс змінити своє життя
+            </p>
+            <div class="header-button-container">
+              <a class="header-button link" data-scroll href="#register"
+                >Приєднатися</a
+              >
+              <div class="header-sale-mark biggest">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/header/sale-mark-1x.png 1x,
+                      ./src/img/header/sale-mark-2x.png 2x
+                    "
+                    width="70"
+                    height="70" />
+                  <img
+                    class="sale-mark"
+                    src="./src/img/header/sale-mark-1x.png"
+                    alt="sale"
+                    width="70"
+                    height="70"
+                /></picture>
+                <p class="sale-number">-85%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-author section">
+        <div class="container">
+          <h2 class="about-author-title">Автор інтенсиву</h2>
+          <h3 class="author-name">Наталія Венера</h3>
+          <picture
+            ><source
+              srcset="
+                ./src/img/about-author/author-image-1x.png 1x,
+                ./src/img/about-author/author-image-2x.png 2x
+              "
+              width="320"
+              height="320" />
+            <img
+              class="author-image"
+              src="./src/img/about-author/author-image-1x.png"
+              alt="Наталія Венера"
+              width="320"
+              height="320"
+          /></picture>
+          <p class="about-author-text">
+            Родолог, енерготерапевт вже більше 5 років
+          </p>
+          <ul class="about-author-list">
+            <li class="list-item">Мама 3 чудових дітей, та в очікуванні 4</li>
+            <li class="list-item">
+              Пропрацювала безліч родових програм та травм. Тепер допомагаю
+              людям, пропрацювувати родові та кармічні програми, покращувати
+              фінансовий рівень, відносини тощо. Маю прекрасні люблячі стосунки
+              з коханим чоловіком та батьками
+            </li>
+            <li class="list-item">
+              Моя місія полягає в тому, щоб допомогти людям проживати найкращий
+              сценарій життя в нових енергіях планети
+            </li>
+            <li class="list-item">Виросла в доході до 10 000$ в місяць</li>
+          </ul>
+        </div>
+      </section>
+      <section class="what-consist section">
+        <div class="container">
+          <div class="what-consist-title-container">
+            <h2 class="what-consist-title">
+              З чого складається <span>інтенсив</span>
+            </h2>
+            <p class="what-consist-desc">
+              Курс включає у себе 7 блоків, 5 відеоуроків, 3 авторські
+              медитації, практичні завдання та теоретичну інформацію
+            </p>
+            <ul class="what-consist-list">
+              <li class="list-item">
+                На цьому інтенсиві ви зможете познайомитись зі своїм Родом,
+                відчуєте його силу і підтримку
+              </li>
+              <li class="list-item">
+                За допомогою авторських медитацій дізнаєтесь, які програми
+                впливають на ваш фінансовий ріст і де саме у родовій системі
+                знаходиться кармічна енергія, яка блокує ваші гроші
+              </li>
+            </ul>
+            <p class="what-consist-text">
+              <span>Отримаєте знання про функції родового егрегора</span> та
+              інформацію як взаємодіяти із родом та отримувати його
+              Благословення
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="program section">
+        <div class="container">
+          <h2 class="program-title">Програма інтенсиву</h2>
+          <ul class="program-list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-image-01-1x.png 1x,
+                    ./src/img/program/program-image-01-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-image-01-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              <span class="item-number">01</span>
+              <p class="item-text">
+                <span>Інформація</span> про інтенсив та знайомство
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-image-02-1x.png 1x,
+                    ./src/img/program/program-image-02-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-image-02-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              <span class="item-number">02</span>
+              <p class="item-text">
+                <span>Відео-лекція</span> "Що таке Рід, та Родова система"
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-image-03-1x.png 1x,
+                    ./src/img/program/program-image-03-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-image-03-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              <span class="item-number">03</span>
+              <p class="item-text"><span>Практичне завдання</span> "Родовід"</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-image-04-1x.png 1x,
+                    ./src/img/program/program-image-04-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-image-04-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              <span class="item-number">04</span>
+              <p class="item-text"><span>Медитація</span> "Сила Роду"</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-image-05-1x.png 1x,
+                    ./src/img/program/program-image-05-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-image-05-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              <span class="item-number">05</span>
+              <p class="item-text">
+                <span>Відео-лекція</span> про методи взаємодії із родом та
+                практичні завдання
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-image-06-1x.png 1x,
+                    ./src/img/program/program-image-06-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-image-06-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              <span class="item-number">06</span>
+              <p class="item-text">
+                <span>Медитація - регресія</span> "Де заховані мої гроші"
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-image-07-1x.png 1x,
+                    ./src/img/program/program-image-07-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-image-07-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              <span class="item-number">07</span>
+              <p class="item-text">
+                <span>Відео-лекція</span> "Як рід взаємодіє із нами"
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-image-08-1x.png 1x,
+                    ./src/img/program/program-image-08-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-image-08-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              <span class="item-number">08</span>
+              <p class="item-text">
+                <span>Відео-лекція</span> "Як отримати благословення роду"
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-image-09-1x.png 1x,
+                    ./src/img/program/program-image-09-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-image-09-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              <span class="item-number">09</span>
+              <p class="item-text">
+                <span>Медитація</span> "Благословення роду"
+              </p>
+            </li>
+          </ul>
+          <p class="price"><span>4990грн</span> 499грн</p>
+          <div class="header-button-container">
+            <a class="header-button link" data-scroll href="#register"
+              >Приєднатися</a
+            >
+            <div class="header-sale-mark biggest">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/header/sale-mark-1x.png 1x,
+                    ./src/img/header/sale-mark-2x.png 2x
+                  "
+                  width="70"
+                  height="70" />
+                <img
+                  class="sale-mark"
+                  src="./src/img/header/sale-mark-1x.png"
+                  alt="sale"
+                  width="70"
+                  height="70"
+              /></picture>
+              <p class="sale-number">-85%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bonuses">
+        <div class="container">
+          <div class="bonuses-title-container">
+            <h2 class="bonuses-title">
+              Встигни приєднатись за кращою ціною <br />
+              <span>і отримати бонуси</span>
+            </h2>
+          </div>
+          <picture
+            ><source
+              srcset="
+                ./src/img/bonuses/bonus-01-1x.png 1x,
+                ./src/img/bonuses/bonus-01-2x.png 2x
+              "
+              width="300"
+              height="300" />
+            <img
+              class="bonus-image"
+              src="./src/img/bonuses/bonus-01-1x.png"
+              alt="bonus"
+              width="300"
+              height="300"
+          /></picture>
+          <div class="bonuses-wrapper">
+            <ul class="bonuses-list">
+              <li class="list-item">
+                <span>- Медитація</span> у записі "Ти - мільйонер"
+              </li>
+              <li class="list-item">
+                <span>- Подкаст</span> про гроші та реалізацію
+              </li>
+              <li class="list-item">
+                <span>- Твій персональний</span> фінансовий код
+              </li>
+            </ul>
+            <p class="item-plus">+ Можливість особистої діагностики</p>
+          </div>
+          <div id="countdown-two" class="countdown">
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="milliseconds countdown-time"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="how-study section">
+        <div class="container">
+          <div class="how-study-title-container">
+            <h2 class="how-study-title">Як відбувається</h2>
+            <p class="how-study-subtitle">навчання</p>
+          </div>
+          <ul class="how-study-list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/how-study/how-study-01-1x.png 1x,
+                    ./src/img/how-study/how-study-01-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="how-study-image"
+                  src="./src/img/how-study/how-study-01-1x.png"
+                  alt="number"
+                  width="34"
+                  height="34"
+              /></picture>
+              Одразу після оплати ви отримаєте доступ до матеріалів курсу на
+              вказаний при оплаті email
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/how-study/how-study-02-1x.png 1x,
+                    ./src/img/how-study/how-study-02-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="how-study-image"
+                  src="./src/img/how-study/how-study-02-1x.png"
+                  alt="number"
+                  width="34"
+                  height="34"
+              /></picture>
+              Всі матеріали будуть доступні вам одразу, протягом 90 днів
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/how-study/how-study-03-1x.png 1x,
+                    ./src/img/how-study/how-study-03-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="how-study-image"
+                  src="./src/img/how-study/how-study-03-1x.png"
+                  alt="number"
+                  width="34"
+                  height="34"
+              /></picture>
+              Також у вас з’явиться можливість пройти особисту діагностику з
+              Наталією, де ви зможете дізнатись, які скарби ви можете ще
+              отримати після роботи із родом і як це покращити ваше життя
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/how-study/how-study-04-1x.png 1x,
+                    ./src/img/how-study/how-study-04-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="how-study-image"
+                  src="./src/img/how-study/how-study-04-1x.png"
+                  alt="number"
+                  width="34"
+                  height="34"
+              /></picture>
+              У нас діє 14 денна гарантія безумовного повернення коштів. Якщо ви
+              зрозумієте, що цей інтенсив не для вас, ми повернемо кошти без
+              питань
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="results section">
+        <div class="container">
+          <div class="results-title-container">
+            <h2 class="results-title">Результати</h2>
+            <p class="results-subtitle">після навчання</p>
+          </div>
+          <ul class="results-list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/results/result-01-1x.png 1x,
+                    ./src/img/results/result-01-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="result-image"
+                  src="./src/img/results/result-01-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              Ви отримаєте родову підтримку та додаткову енергію для реалізації
+              себе та своїх талантів
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/results/result-02-1x.png 1x,
+                    ./src/img/results/result-02-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="result-image"
+                  src="./src/img/results/result-02-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              Вам поступатимуть нові вигідні фінансові пропозиції 
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/results/result-03-1x.png 1x,
+                    ./src/img/results/result-03-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="result-image"
+                  src="./src/img/results/result-03-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              Розшириться грошове поле
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/results/result-04-1x.png 1x,
+                    ./src/img/results/result-04-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="result-image"
+                  src="./src/img/results/result-04-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              Відкриєте у собі нові грошові ідеї
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/results/result-05-1x.png 1x,
+                    ./src/img/results/result-05-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="result-image"
+                  src="./src/img/results/result-05-1x.png"
+                  alt="emoji"
+                  width="34"
+                  height="34"
+              /></picture>
+              Також ви помітите , як починає налагоджуватись ваше життя у інших
+              сферах. У вас з’явиться самоцінність, виросте любов до себе та
+              покращаться відносини із протилежною статтю, дітьми, батьками
+            </li>
+          </ul>
+          <div class="header-button-container">
+            <a class="header-button link" data-scroll href="#register"
+              >Приєднатися</a
+            >
+            <div class="header-sale-mark biggest">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/header/sale-mark-1x.png 1x,
+                    ./src/img/header/sale-mark-2x.png 2x
+                  "
+                  width="70"
+                  height="70" />
+                <img
+                  class="sale-mark"
+                  src="./src/img/header/sale-mark-1x.png"
+                  alt="sale"
+                  width="70"
+                  height="70"
+              /></picture>
+              <p class="sale-number">-85%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews section">
+        <div class="container">
+          <div class="reviews-container">
+            <h2 class="reviews-title">відгуки</h2>
+            <div class="swiper mySwiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-01-1x.png 1x,
+                        ./src/img/reviews/review-01-2x.png 2x
+                      "
+                      width="320"
+                      height="320" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-01-1x.png"
+                      alt="review"
+                      width="320"
+                      height="320"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-02-1x.png 1x,
+                        ./src/img/reviews/review-02-2x.png 2x
+                      "
+                      width="320"
+                      height="320" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-02-1x.png"
+                      alt="review"
+                      width="320"
+                      height="320"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-03-1x.png 1x,
+                        ./src/img/reviews/review-03-2x.png 2x
+                      "
+                      width="320"
+                      height="320" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-03-1x.png"
+                      alt="review"
+                      width="320"
+                      height="320"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-04-1x.png 1x,
+                        ./src/img/reviews/review-04-2x.png 2x
+                      "
+                      width="320"
+                      height="320" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-04-1x.png"
+                      alt="review"
+                      width="320"
+                      height="320"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-05-1x.png 1x,
+                        ./src/img/reviews/review-05-2x.png 2x
+                      "
+                      width="320"
+                      height="320" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-05-1x.png"
+                      alt="review"
+                      width="320"
+                      height="320"
+                  /></picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions section">
+        <div class="container">
+          <div class="questions-title-box">
+            <h2 class="questions-title">Відповіді на запитання</h2>
+          </div>
+          <div class="questions-container">
+            <ul class="questions-list list">
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Для чого мені взагалі працювати із родом?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Рід - найвпливовіший егрегор у нашому житті, адже з
+                      молоком матері нам передаються родинні переконання та
+                      установки та більш глибокі трагічні події минулого,
+                      передаються нам у ДНК та на рівні підсвідомості
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Чому цей інтенсив допоможе мені розширити мою фінансову
+                    сферу?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      У цьому інтенсиві ми працюємо не лише із практичними
+                      завданнями, але йдемо у роботу із підсвідомими програмами
+                      завдяки медитаціям
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Якщо у мене погані стосунки із батьками, або одним із них,
+                    цей курс допоможе мені?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Так, ти зрозумієш наскільки важливим є рід і чому стосунки
+                      з предками - це твій ресурс
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer"><div class="container"></div></footer>
+    <script src="./src/js/changeDate.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/swiper.js" type="module"></script>
+    <script src="./src/js/swiper.js" type="module"></script>
   </body>
 </html>
