@@ -820,6 +820,8 @@
   -webkit-text-fill-color: transparent;
 }
 .results-subtitle {
+  margin-top: -14px;
+
   color: #101010;
   text-align: center;
   font-family: 'Futura PT';
