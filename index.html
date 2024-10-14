@@ -9,6 +9,7 @@
       href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -19,7 +20,9 @@
             Старт <span id="dateElement"></span> <span id="monthElement"></span>
           </p>
         </div>
-        <h1 class="header-title">РОДОВИЙ капітал</h1>
+        <h1 class="header-title" data-aos="fade-down" data-aos-duration="1000">
+          РОДОВИЙ капітал
+        </h1>
         <p class="header-desc">
           Як розкрити свій фінансовий потенціал роду і за 6 тижнів навчитися
           притягувати багатство
@@ -99,7 +102,11 @@
           </li>
         </ul>
         <div class="header-button-container">
-          <a class="header-button link" data-scroll href="#register"
+          <a
+            class="header-button link"
+            href="https://send.monobank.ua/jar/9XfyVTJxwP"
+            target="_blank"
+            rel="nofollow"
             >Хочу на курс</a
           >
           <div class="header-sale-mark">
@@ -131,23 +138,24 @@
               Встигни приєднатись за кращою ціною <br />
               <span>і отримати бонуси</span>
             </h2>
-            <!-- <p class="bonus-subtitle">і отримати бонуси</p> -->
           </div>
-          <picture
-            ><source
-              srcset="
-                ./src/img/bonuses/bonus-01-1x.png 1x,
-                ./src/img/bonuses/bonus-01-2x.png 2x
-              "
-              width="300"
-              height="300" />
-            <img
-              class="bonus-image"
-              src="./src/img/bonuses/bonus-01-1x.png"
-              alt="bonus"
-              width="300"
-              height="300"
-          /></picture>
+          <div data-aos="zoom-in" data-aos-duration="1000">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/bonuses/bonus-01-1x.png 1x,
+                  ./src/img/bonuses/bonus-01-2x.png 2x
+                "
+                width="300"
+                height="300" />
+              <img
+                class="bonus-image"
+                src="./src/img/bonuses/bonus-01-1x.png"
+                alt="bonus"
+                width="300"
+                height="300"
+            /></picture>
+          </div>
           <div class="bonuses-wrapper">
             <ul class="bonuses-list">
               <li class="list-item">
@@ -179,7 +187,11 @@
       </section>
       <section class="for-whom section">
         <div class="container">
-          <div class="for-whom-title-container">
+          <div
+            class="for-whom-title-container"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             <h2 class="for-whom-title">Для кого</h2>
             <p class="for-whom-subtitle">цей інтенсив:</p>
           </div>
@@ -385,7 +397,11 @@
               твій шанс змінити своє життя
             </p>
             <div class="header-button-container">
-              <a class="header-button link" data-scroll href="#register"
+              <a
+                class="header-button link"
+                href="https://send.monobank.ua/jar/9XfyVTJxwP"
+                target="_blank"
+                rel="nofollow"
                 >Приєднатися</a
               >
               <div class="header-sale-mark biggest">
@@ -412,23 +428,31 @@
       </section>
       <section class="about-author section">
         <div class="container">
-          <h2 class="about-author-title">Автор інтенсиву</h2>
+          <h2
+            class="about-author-title"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            Автор інтенсиву
+          </h2>
           <h3 class="author-name">Наталія Венера</h3>
-          <picture
-            ><source
-              srcset="
-                ./src/img/about-author/author-image-1x.png 1x,
-                ./src/img/about-author/author-image-2x.png 2x
-              "
-              width="320"
-              height="320" />
-            <img
-              class="author-image"
-              src="./src/img/about-author/author-image-1x.png"
-              alt="Наталія Венера"
-              width="320"
-              height="320"
-          /></picture>
+          <div data-aos="zoom-in" data-aos-duration="1000">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/about-author/author-image-1x.png 1x,
+                  ./src/img/about-author/author-image-2x.png 2x
+                "
+                width="320"
+                height="320" />
+              <img
+                class="author-image"
+                src="./src/img/about-author/author-image-1x.png"
+                alt="Наталія Венера"
+                width="320"
+                height="320"
+            /></picture>
+          </div>
           <p class="about-author-text">
             Родолог, енерготерапевт вже більше 5 років
           </p>
@@ -451,7 +475,11 @@
       <section class="what-consist section">
         <div class="container">
           <div class="what-consist-title-container">
-            <h2 class="what-consist-title">
+            <h2
+              class="what-consist-title"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
               З чого складається <span>інтенсив</span>
             </h2>
             <p class="what-consist-desc">
@@ -479,7 +507,13 @@
       </section>
       <section class="program section">
         <div class="container">
-          <h2 class="program-title">Програма інтенсиву</h2>
+          <h2
+            class="program-title"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            Програма інтенсиву
+          </h2>
           <ul class="program-list">
             <li class="list-item">
               <picture
@@ -670,7 +704,11 @@
           </ul>
           <p class="price"><span>4990грн</span> 499грн</p>
           <div class="header-button-container">
-            <a class="header-button link" data-scroll href="#register"
+            <a
+              class="header-button link"
+              href="https://send.monobank.ua/jar/9XfyVTJxwP"
+              target="_blank"
+              rel="nofollow"
               >Приєднатися</a
             >
             <div class="header-sale-mark biggest">
@@ -702,21 +740,23 @@
               <span>і отримати бонуси</span>
             </h2>
           </div>
-          <picture
-            ><source
-              srcset="
-                ./src/img/bonuses/bonus-01-1x.png 1x,
-                ./src/img/bonuses/bonus-01-2x.png 2x
-              "
-              width="300"
-              height="300" />
-            <img
-              class="bonus-image"
-              src="./src/img/bonuses/bonus-01-1x.png"
-              alt="bonus"
-              width="300"
-              height="300"
-          /></picture>
+          <div data-aos="zoom-in" data-aos-duration="1000">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/bonuses/bonus-01-1x.png 1x,
+                  ./src/img/bonuses/bonus-01-2x.png 2x
+                "
+                width="300"
+                height="300" />
+              <img
+                class="bonus-image"
+                src="./src/img/bonuses/bonus-01-1x.png"
+                alt="bonus"
+                width="300"
+                height="300"
+            /></picture>
+          </div>
           <div class="bonuses-wrapper">
             <ul class="bonuses-list">
               <li class="list-item">
@@ -748,7 +788,11 @@
       </section>
       <section class="how-study section">
         <div class="container">
-          <div class="how-study-title-container">
+          <div
+            class="how-study-title-container"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             <h2 class="how-study-title">Як відбувається</h2>
             <p class="how-study-subtitle">навчання</p>
           </div>
@@ -835,7 +879,11 @@
       </section>
       <section class="results section">
         <div class="container">
-          <div class="results-title-container">
+          <div
+            class="results-title-container"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             <h2 class="results-title">Результати</h2>
             <p class="results-subtitle">після навчання</p>
           </div>
@@ -935,7 +983,11 @@
             </li>
           </ul>
           <div class="header-button-container">
-            <a class="header-button link" data-scroll href="#register"
+            <a
+              class="header-button link"
+              href="https://send.monobank.ua/jar/9XfyVTJxwP"
+              target="_blank"
+              rel="nofollow"
               >Приєднатися</a
             >
             <div class="header-sale-mark biggest">
@@ -962,7 +1014,13 @@
       <section class="reviews section">
         <div class="container">
           <div class="reviews-container">
-            <h2 class="reviews-title">відгуки</h2>
+            <h2
+              class="reviews-title"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              відгуки
+            </h2>
             <div class="swiper mySwiper1">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -1058,7 +1116,11 @@
       </section>
       <section class="questions section">
         <div class="container">
-          <div class="questions-title-box">
+          <div
+            class="questions-title-box"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             <h2 class="questions-title">Відповіді на запитання</h2>
           </div>
           <div class="questions-container">
@@ -1121,10 +1183,40 @@
         </div>
       </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer section">
+      <div class="container">
+        <div class="fop-container">
+          <p class="fop-info">Гулько Н.С.</p>
+          <p class="fop-info">іпн 3409511645</p>
+        </div>
+        <div class="fop-container">
+          <p class="fop-info">публічна оферта</p>
+          <p class="fop-info">політика конфідеційності</p>
+        </div>
+        <a
+          class="creator-link"
+          href="https://www.instagram.com/lllcku"
+          target="_blank"
+          rel="nofollow"
+          ><div class="disign-creator-container">
+            <p class="disign-creator-title">розробка сайту</p>
+            <div class="creator-name-container">
+              <img
+                class="creator-img"
+                src="./src/img/footer-insta.svg"
+                alt="insta"
+                width="17"
+                height="17"
+              />
+              <p class="creator-name">lisa bardadym</p>
+            </div>
+          </div></a
+        >
+      </div>
+    </footer>
     <script src="./src/js/changeDate.js" type="module"></script>
     <script src="./src/js/timer.js" type="module"></script>
     <script src="./src/js/swiper.js" type="module"></script>
-    <script src="./src/js/swiper.js" type="module"></script>
+    <script src="./src/js/aos.js" type="module"></script>
   </body>
 </html>
